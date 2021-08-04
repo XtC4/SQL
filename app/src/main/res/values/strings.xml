@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SQLiteDemo</string>
+    <string name="title">Please enter the details bellow: </string>
+    <string name="hint_n">enter your name here</string>
+    <string name="hint_c">enter your contact here</string>
+    <string name="hint_dob">enter your date of birth here</string>
+    <string name="btn_insert">INSERT NEW DATA</string>
+    <string name="btn_update">UPDATE DATA</string>
+    <string name="btn_delete">DELETE EXISTING DATA</string>
+    <string name="btn_view">VIEW DATA</string>
+</resources>
