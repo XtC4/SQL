@@ -1,21 +1,16 @@
 package com.example.sql;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.util.Log;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ListView;
 import android.widget.Toast;
 import android.database.Cursor;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        userList = new ArrayList<>();
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         name = findViewById(R.id.username);
@@ -110,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 else {
+                    userList = new ArrayList<>();
                     Users user;
                     while(res.moveToNext()){
                         user = new Users(res.getString(0),res.getString(1),res.getString(2));
